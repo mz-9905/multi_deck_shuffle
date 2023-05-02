@@ -95,7 +95,7 @@ export default {
                 this.$store.dispatch("shuffleRequest/removeSendDeckList");//前回のシャッフル前デッキリストを削除
                 this.$store.dispatch("shuffleRequest/removeResultDeckList");//前回のシャッフル後デッキリストを削除
                 this.flag=true;//フラグを立てる
-                this.sleep(3000);//5秒停止
+                this.sleep(1000);//1秒停止
             } else {
                 this.deckList=this.$store.getters["shuffleRequest/getSendDeckList"];//デッキリスト
             }
